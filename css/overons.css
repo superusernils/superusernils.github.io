@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* body {
+  background-image: url("https://i.imgur.com/vBDsMvH.png");
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.logo {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.container {
+  background-color: white;
+}
+
+.grid-navbar {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0 0;
+  grid-template-areas: "home menu about-us";
+  color: white;
+  justify-items: center;
+}
+
+.home {
+  grid-area: home;
+  justify-self: end;
+}
+
+.home:hover {
+  color: brown;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.menu:hover {
+  color: brown;
+}
+
+.about-us {
+  grid-area: about-us;
+  justify-self: start;
+}
+
+.about-us:hover {
+  color: brown;
+}
+
+article {
+  margin-top: 50px;
+  padding-left: 100px;
+  padding-bottom: 100px;
+}
+
+.grid-footer {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0 0;
+  grid-template-areas: "contact open maps";
+  justify-items: center;
+}
+
+.card {
+  border: none!important;
+  background-color: hsla(360, 100%, 100%, 0)!important;
+  width: 250px!important;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.open {
+  grid-area: open;
+}
+
+.maps {
+  grid-area: maps;
+}
