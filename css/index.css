@@ -28,6 +28,9 @@ html {
   grid-template-areas: "home menu about-us";
   color: white;
   justify-items: center;
+  background-image: url("https://i.ibb.co/xfwXNvY/New-Project-4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .home {
@@ -35,16 +38,16 @@ html {
   justify-self: end;
 }
 
-.home:hover {
-  color: brown;
+.home a {
+  color: white!important;
 }
 
 .menu {
   grid-area: menu;
 }
 
-.menu:hover {
-  color: brown;
+.menu a {
+  color: white!important;
 }
 
 .about-us {
@@ -52,14 +55,15 @@ html {
   justify-self: start;
 }
 
-.about-us:hover {
-  color: brown;
+.about-us a {
+  color: white!important;
 }
 /* Slider */
 
 .carousel-inner {
   padding-top: 50px;
   height: 600px;
+  background-color: brown;
 }
 /* Algemene style van de cards */
 
