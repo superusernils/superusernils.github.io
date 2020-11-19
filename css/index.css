@@ -57,6 +57,11 @@ html {
 
 .carousel-inner {
   height: 600px;
+  align-self: center!important;
+}
+
+.carousel-inner > .item > img {
+  margin: 0 auto;
 }
 /* Algemene style van de cards */
 
