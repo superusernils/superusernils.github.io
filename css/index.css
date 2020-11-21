@@ -7,6 +7,7 @@ html {
 * body {
   background-image: url("https://i.imgur.com/vBDsMvH.png");
   font-family: 'Oswald', sans-serif!important;
+  padding-top: 12vh;
 }
 
 .logo {
@@ -125,6 +126,7 @@ html {
 .mb-0,
 .my-0 {
   font-style: italic;
+  text-align: left;
 }
 
 .food-menu-card .media strong {
@@ -188,7 +190,7 @@ html {
 
 .media-body,
 p {
-  color: #999;
+  color: black;
 }
 /* Footer */
 
@@ -212,4 +214,56 @@ p {
 
 .maps {
   grid-area: maps;
+}
+/* Media queries */
+@media screen and (max-width: 766px) {
+  .navbar {
+    height: 14vh;
+  }
+
+  .theoslogo {
+    padding-top: 50px;
+  }
+
+  .carousel-inner {
+    height: 300px;
+  }
+
+  .grid-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0 0;
+    grid-template-areas: "card-1" "card-2" "card-3" "card-4";
+    justify-items: center;
+  }
+
+  .grid-footer {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0 0;
+    grid-template-areas: "contact open" " maps maps";
+    justify-items: center;
+  }
+
+  iframe {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .theoslogo {
+    padding-top: 50px;
+  }
+
+  .grid-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0 0;
+    grid-template-areas: "card-1 card-2" "card-3 card-4";
+    height: 600px;
+    justify-items: center;
+  }
 }
