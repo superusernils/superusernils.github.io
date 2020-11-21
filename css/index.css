@@ -19,7 +19,6 @@ html {
   background-color: white;
 }
 /* Navbar */
-
 .navbar {
   background-color: black;
   height: 100px;
@@ -55,7 +54,6 @@ html {
   color: white!important;
 }
 /* Slider */
-
 .carousel-inner {
   height: 600px;
   align-self: center!important;
@@ -65,7 +63,6 @@ html {
   margin: 0 auto;
 }
 /* Algemene style van de cards */
-
 .card {
   border: none!important;
   background-color: hsla(360, 100%, 100%, 0)!important;
@@ -102,7 +99,6 @@ html {
   grid-area: card-4;
 }
 /* Menu */
-
 .divider {
   width: 100%;
   border: 1px solid brown;
@@ -193,7 +189,6 @@ p {
   color: black;
 }
 /* Footer */
-
 .grid-footer {
   padding-top: 50px;
   display: grid;
@@ -216,6 +211,16 @@ p {
   grid-area: maps;
 }
 /* Media queries */
+@media screen and (min-width: 359px) and (max-width: 600px) {
+  .grid-footer {
+    display: grid;
+    grid-template-columns: 1fr!important;
+    grid-template-rows: 1fr 1fr 1fr!important;
+    gap: 0 0;
+    grid-template-areas: "contact" "open" "maps"!important;
+    justify-items: center;
+  }
+}
 @media screen and (max-width: 766px) {
   .navbar {
     height: 14vh;
@@ -239,13 +244,13 @@ p {
   }
 
   .grid-footer {
-    padding-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0 0;
     grid-template-areas: "contact open" " maps maps";
     justify-items: center;
+    height: 600px;
   }
 
   iframe {
