@@ -73,14 +73,13 @@ html {
   color: brown;
 }
 
-.card-body {}
-
 .grid-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0 0;
-  grid-template-areas: "card-1 card-2 card-3 card-4";
+  grid-template-areas: "card-1 card-2 card-4";
+  justify-items: center;
 }
 
 .card-1 {
@@ -89,10 +88,6 @@ html {
 
 .card-2 {
   grid-area: card-2;
-}
-
-.card-3 {
-  grid-area: card-3;
 }
 
 .card-4 {
@@ -237,9 +232,9 @@ p {
   .grid-cards {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 0 0;
-    grid-template-areas: "card-1" "card-2" "card-3" "card-4";
+    grid-template-areas: "card-1" "card-2" "card-4";
     justify-items: center;
   }
 
@@ -267,7 +262,7 @@ p {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0 0;
-    grid-template-areas: "card-1 card-2" "card-3 card-4";
+    grid-template-areas: "card-1 card-2" "card-4";
     height: 600px;
     justify-items: center;
   }
