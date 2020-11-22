@@ -73,6 +73,10 @@ html {
   color: brown;
 }
 
+.card-body {
+  align-self: center;
+}
+
 .grid-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
