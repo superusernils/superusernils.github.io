@@ -1,0 +1,434 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: #fff;
+  color: #222;
+}
+
+.container {
+  right: 50rem;
+  left: 50rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.title h1 {
+  position: relative;
+  display: inline-block;
+  font-size: 4rem;
+}
+
+.title h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 0.4rem;
+  background-color: #B30B1A;
+}
+/* Header */
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("./images/banner.jpg") center/cover;
+  z-index: 998;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.logo h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.logo h1 span {
+  color: #B30A1A;
+  font-size: 5rem;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: #fff;
+  padding: 0.8rem 1rem;
+  transition: all 300ms ease-in-out;
+}
+
+.nav-link:hover {
+  border-radius: 0.3rem;
+  background-color: #B30A1A;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("");
+}
+/* Hero */
+.hero {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+.hero .content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+.hero a:link,
+.hero a:visited {
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  background-color: #B30A1A;
+  border: 1px solid#B30A1A;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.hero a:hover {
+  background-color: transparent;
+}
+@media only screen and (max-width: 1200px) {
+  .header {
+    height: 80vh;
+  }
+
+  .hero .content {
+    width: 80%;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+
+  .hero a:link,
+  .hero a:visited {
+    padding: 0.7rem 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+.title {
+  text-align: center;
+  padding: 5rem;
+}
+/* specialiteiten */
+.menu-center {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+  justify-content: center;
+  justify-items: center;
+}
+
+.menu-box img {
+  height: 20rem;
+  width: 30rem;
+}
+
+.menu-box p {
+  text-align: center;
+  font-size: larger;
+}
+
+#specialiteiten {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+#gallerij {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+/* etenmenu */
+.tab-content {
+  padding-top: 32px;
+}
+
+.food-menu-card .media h3 {
+  color: brown!important;
+  background-color: hsla(360, 100%, 100%, 0)!important;
+  font-size: 1.5rem;
+}
+
+.food-menu-card {
+  padding-top: 50px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.mb-0,
+.my-0 {
+  font-style: italic;
+  text-align: left;
+}
+
+.food-menu-card .media strong {
+  color: black!important;
+  background-color: hsla(360, 100%, 100%, 0)!important;
+}
+
+.food-menu-card .media {
+  margin-bottom: 20px;
+}
+
+.food-menu-card .media .img-fluid {
+  border-radius: 3px;
+  width: 80px;
+}
+
+.food-menu-card .media .d-flex {
+  position: relative;
+}
+
+.food-menu-card .media .d-flex:before {
+  content: "";
+  position: absolute;
+  left: auto;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  top: 50%;
+}
+
+.food-menu-card .media h3 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
+  padding-right: 1.07143rem;
+  background-color: black;
+  z-index: 2;
+}
+
+.food-menu-card .media strong {
+  background-color: black;
+  display: block;
+  padding-left: 15px;
+  z-index: 2;
+  position: relative;
+}
+
+.tabs-menu-nav > li > a {
+  color: black!important;
+  display: block;
+  font-size: 16px;
+  border-bottom: 3px solid transparent;
+  opacity: 0.5;
+}
+
+.tabs-menu-nav > li > a.active {
+  opacity: 1;
+  border-bottom-color: brown;
+}
+
+.media-body,
+p {
+  color: black!important;
+}
+
+.carousel-inner {
+  height: 600px;
+  align-self: center!important;
+}
+
+.carousel-inner > .item > img {
+  margin: 0 auto;
+}
+
+.carousel-inner > .item > a > img,
+.carousel-inner > .item > img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  line-height: 1;
+  margin: auto;
+  width: 100%; // Add this
+}
+
+#menu {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+section {
+  padding: 60px 0;
+}
+
+section .section-title {
+  text-align: center;
+  color: #007b5e;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+#footer h5 {
+  padding-left: 10px;
+  border-left: 3px solid #eeeeee;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+#footer a {
+  color: #ffffff;
+  text-decoration: none !important;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+#footer ul.social li {
+  padding: 3px 0;
+}
+
+#footer ul.social li a i {
+  margin-right: 5px;
+  font-size: 25px;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+#footer ul.social li:hover a i {
+  font-size: 30px;
+  margin-top: -10px;
+}
+
+#footer ul.quick-links li a,
+#footer ul.social li a {
+  color: #ffffff;
+}
+
+#footer ul.social li a:hover {
+  color: #eeeeee;
+}
+
+#footer ul.quick-links li {
+  padding: 3px 0;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+#footer ul.quick-links li a i {
+  margin-right: 5px;
+}
+@media (max-width:767px) {
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero .content {
+    width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  .carousel-inner {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 567px) {
+  .header {
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 996px) {
+  .menu-center {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .menu-center {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 567px) {
+  .menu-center {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-box img {
+    height: 20rem;
+  }
+}
