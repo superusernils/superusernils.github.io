@@ -16,7 +16,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
-  background-color: #fff;
+  background-color: #FBFAF5;
   color: #222;
 }
 
@@ -225,7 +225,6 @@ li {
 
 .food-menu-card {
   padding-top: 50px;
-  background-color: white;
   border-radius: 8px;
 }
 
