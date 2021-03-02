@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+
 *,
 *::after,
 *::before {
@@ -13,9 +16,10 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Oswald', sans-serif!important;
   font-size: 1.6rem;
   font-weight: 400;
+  letter-spacing: .1rem;
   background-color: #FBFAF5;
   color: #222;
 }
@@ -216,6 +220,10 @@ li {
   font-size: larger;
 }
 
+.button {
+  display: none;
+}
+
 #specialiteiten {
   padding-top: 10rem;
   padding-bottom: 10rem;
@@ -228,6 +236,10 @@ li {
 /* etenmenu */
 .tab-content {
   padding-top: 32px;
+}
+
+.food-menu-card a {
+  color: black!important;
 }
 
 .food-menu-card .media h3 {
@@ -265,14 +277,14 @@ li {
   position: relative;
 }
 
-.food-menu-card .media .d-flex:before {
+.food-menu-card .media .d-flex::before {
   content: "";
   position: absolute;
   left: auto;
-  right: 0;
-  width: 100%;
+  right: 5rem;
+  width: 60%;
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: grey;
   top: 50%;
 }
 
@@ -293,8 +305,8 @@ li {
   position: relative;
 }
 
+
 .tabs-menu-nav > li > a {
-  color: black!important;
   display: block;
   font-size: 16px;
   border-bottom: 3px solid transparent;
@@ -308,7 +320,8 @@ li {
 
 .media-body,
 p {
-  color: black!important;
+  font-size: 1.4rem;
+  color: grey!important;
 }
 
 .carousel-inner {
@@ -327,7 +340,7 @@ p {
   max-width: 100%;
   line-height: 1;
   margin: auto;
-  width: 100%; // Add this
+  width: 100%;
 }
 
 #menu {
